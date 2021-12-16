@@ -1,0 +1,39 @@
+@import "./../../base";
+.categoriesBar {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    border-top: 0.5px solid $darkgray-color;
+    border-bottom: 0.5px solid $darkgray-color;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+    scrollbar-width: none;
+    &__item {
+        padding: 5px 15px;
+        font-size: 13px;
+        border-radius: 14px;
+        border: 0.5px solid $gray-color;
+        color: $white-color;
+        background-color: $darkgray-color;
+        transition: all 0.05s ease-out;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &--active {
+            color: $gray-color;
+            background-color: $white-color;
+        }
+    }
+    &__item:not(:first-of-type) {
+        margin-left: 10px;
+    }
+    &__item:hover {
+        cursor: pointer;
+        background-color: $border-color;
+    }
+}

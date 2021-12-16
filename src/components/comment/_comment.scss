@@ -1,0 +1,36 @@
+@import "./../../base";
+.comment {
+    display: flex;
+
+    &:not(:first-of-type) {
+        margin-top: 1rem;
+    }
+    &__channel {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 1rem;
+    }
+    .channel1 {
+        display: flex;
+        flex-direction: column;
+        .name {
+            font-size: 0.9rem;
+            span {
+                font-size: 0.8rem;
+                color: $lightgray-color;
+            }
+        }
+        .commentText {
+            color: $white-color;
+            font-size: 0.85rem;
+            text-align: justify;
+            padding: 1rem 0;
+            .showMoreText {
+                display: flex;
+                text-decoration: none;
+            }
+        }
+    }
+}

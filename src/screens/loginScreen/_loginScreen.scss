@@ -1,0 +1,36 @@
+@import "./../../base";
+.login {
+    background-color: $black-primary;
+    height: 100vh;
+    position: relative;
+}
+.main {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    padding: 10rem;
+    background-color: $black-secondary;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    transition: all 3s ease-in-out;
+    img {
+        height: 100%;
+    }
+    button {
+        padding: 0.5rem 1.5rem;
+        border-radius: 10px;
+        border: none;
+        margin: 1rem 0;
+        font-weight: bold;
+        &:hover {
+            background-color: $gray-color;
+            color: $white-color;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import "./../../base";
+.sidebar {
+    width: 14vw;
+    color: $lightgray-color;
+    position: sticky;
+    z-index: 10;
+    left: 0;
+    top: 10vh;
+    background: $black-primary;
+
+    li {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        padding: 0.5rem 1.3rem;
+        transition: all ease-out 0.1s;
+        span {
+            margin-left: 1rem;
+            color: $white-color;
+        }
+        &:first-of-type {
+            background-color: $gray-color;
+            color: $white-color;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: $gray-color;
+        }
+    }
+    &--toggle {
+        display: none;
+    }
+}
+@media (max-width: $breakpoint-small) {
+    .sidebar {
+        display: none;
+    }
+}
+@media (max-width: $breakpoint-medium) {
+    .sidebar {
+        width: 90px;
+        li {
+            justify-content: center;
+        }
+        span {
+            display: none;
+        }
+    }
+}

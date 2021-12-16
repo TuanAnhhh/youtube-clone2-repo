@@ -1,0 +1,10 @@
+@import "./base";
+.app_container {
+    display: flex;
+    padding-top: 4rem;
+    background: $black-secondary;
+    height: calc(100vh);
+}
+.app__main {
+    height: 100%;
+}

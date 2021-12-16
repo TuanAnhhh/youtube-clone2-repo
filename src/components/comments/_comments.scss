@@ -1,0 +1,58 @@
+@import "./../../base";
+.comments {
+    color: $white-color;
+    .comments-form {
+        display: flex;
+        &__channel {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+        form {
+            flex: 1;
+            input {
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $lightgray-color;
+                outline: none;
+                color: $white-color;
+                font-size: 1rem;
+                padding: 5px;
+                &:focus {
+                    border-bottom: 1px solid #000;
+                    .action {
+                        display: block;
+                    }
+                }
+            }
+            .action {
+                float: right;
+                margin: 1rem 0;
+                // display: none;
+                span {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                &__btn {
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    padding: 0.5rem;
+                    border: none;
+                    &--cancel {
+                        margin-right: 0.5rem;
+                        color: $white-color;
+                        background-color: transparent;
+                    }
+                    &--comment {
+                        color: $lightgray-color;
+                        background-color: $darkgray-color;
+                    }
+                }
+            }
+        }
+    }
+}

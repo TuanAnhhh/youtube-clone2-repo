@@ -1,0 +1,91 @@
+@import "./../../base";
+.videoMeta {
+    color: $white-color;
+    margin-top: 1rem;
+    &__title {
+        font-size: 1.2rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .info {
+        display: flex;
+        color: $lightgray-color;
+        justify-content: space-between;
+        align-items: center;
+        &__text {
+            font-size: 15px;
+        }
+        &__menu {
+            font-size: 13px;
+            margin-right: 1rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            svg {
+                font-size: 30px;
+                margin-right: 5px;
+            }
+            .liked {
+                margin-right: 20px;
+            }
+        }
+    }
+    .channelInfo {
+        border-top: 0.5px solid $darkgray-color;
+        border-bottom: 0.5px solid $darkgray-color;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.2rem 1.2rem 1rem 0;
+        margin-top: 1rem;
+        &__channel {
+            display: flex;
+            align-items: center;
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 1rem;
+            }
+            .channel1 {
+                display: flex;
+                flex-direction: column;
+                .name {
+                    font-size: 1rem;
+                }
+                .subs {
+                    color: $lightgray-color;
+                    font-size: 0.85rem;
+                }
+            }
+        }
+        &__btn {
+            background-color: $red-color;
+            width: 7.5rem;
+            text-transform: uppercase;
+            border: none;
+            font-weight: 500;
+            color: $white-color;
+            border-radius: 2px;
+            &--gray {
+                background-color: $lightgray-color;
+            }
+        }
+    }
+    &__desc {
+        color: $lightgray-color;
+        padding: 1rem 0;
+        font-size: 14px;
+        text-align: justify;
+        .showMoreText {
+            text-decoration: none;
+            font-size: 13px;
+            color: $white-color;
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+}

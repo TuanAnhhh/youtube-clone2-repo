@@ -1,0 +1,9 @@
+@import "./../../base";
+.watchScreen {
+    padding: 2rem 1rem;
+    &__player {
+        height: 40rem;
+        width: 100%;
+        padding-right: 1rem;
+    }
+}
